@@ -1,4 +1,4 @@
-export default function Logo() {
+const LogoDash = () => {
   return (
     <svg
       width="209"
@@ -54,3 +54,5 @@ export default function Logo() {
     </svg>
   );
 }
+
+export default LogoDash;

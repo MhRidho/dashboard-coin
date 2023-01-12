@@ -2,12 +2,14 @@ import Topbar from "./Topbar";
 import Content from "./Content";
 import Footer from "./Footer";
 
-export default function ContentFluid() {
+const ContentFluid = () => {
   return (
-    <div className="w-4/5">
+    <div className="ml-16 w-full">
       <Topbar />
       <Content />
       <Footer />
     </div>
   );
 }
+
+export default ContentFluid;

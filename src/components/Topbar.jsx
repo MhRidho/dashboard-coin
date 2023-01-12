@@ -2,7 +2,7 @@ import SearchIcon from "./Icons/SearchIcon";
 import LogoutIcon from "./Icons/LogoutIcon";
 import HamburgerIcon from "./Icons/HamburgerIcon";
 
-export default function Topbar() {
+const Topbar = () => {
   return (
     <nav className="w-full h-[65px] shadow-[2px_2px_4px_0_rgba(0,0,0,0.3)] pt-[22px] pb-[23px] pl-[33px] flex justify-between">
       <div className="flex items-center gap-2.5">
@@ -10,13 +10,13 @@ export default function Topbar() {
         <form>
           <input
             type="text"
-            className="w-[800px] p-2 focus:outline-none focus:border-0 focus:ring-0
+            className="p-2 focus:outline-none focus:border-0 focus:ring-0
             disabled:shadow-none"
             placeholder="Search anything here..."
           />
         </form>
       </div>
-      <div className="ml-16 mr-9 flex">
+      <div className="hidden ml-16 mr-9 md:flex">
         <a href="#" className="flex items-center gap-2.5">
           <LogoutIcon />
           <span className="text-[#EE0D0D] font-bold">Logout</span>
@@ -28,3 +28,5 @@ export default function Topbar() {
     </nav>
   );
 }
+
+export default Topbar;
